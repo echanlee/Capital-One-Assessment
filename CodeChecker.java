@@ -8,6 +8,8 @@ public class CodeChecker {
 		Scanner sc = new Scanner(new File(fileName));
 		if(fileName.equals(".") || !fileName.contains("."))
 			return; 
+		
+		//Assuming that only the following types of files will be input
 		if(fileName.endsWith(".java") || fileName.endsWith(".c") || fileName.endsWith(".js") || fileName.endsWith(".cpp"))
 			dashComments(sc);
 		else if(fileName.endsWith(".py"))
